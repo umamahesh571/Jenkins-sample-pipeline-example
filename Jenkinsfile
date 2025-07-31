@@ -23,7 +23,7 @@ pipeline {
                 body: """<p>Build succeeded for job: ${env.JOB_NAME}</p>
                          <p>Build Number: ${env.BUILD_NUMBER}</p>
                          <p>View it: <a href='${env.BUILD_URL}'>${env.BUILD_URL}</a></p>""",
-                to: 'umamahesh571@gmail.com.com',
+                to: 'umamahesh571@gmail.com',
                 mimeType: 'text/html'
             )
         }
