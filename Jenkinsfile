@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/umamahesh571/Jenkins-sample-pipeline-example.git'
+                git branch: 'main', url: 'https://github.com/213narasimha/Jenkins-sample-pipeline-example.git'
             }
         }
 
@@ -23,7 +23,7 @@ pipeline {
                 body: """<p>Build succeeded for job: ${env.JOB_NAME}</p>
                          <p>Build Number: ${env.BUILD_NUMBER}</p>
                          <p>View it: <a href='${env.BUILD_URL}'>${env.BUILD_URL}</a></p>""",
-                to: 'umamahesh571@gmail.com',
+                to: '213narasimha@gmail.com',
                 mimeType: 'text/html'
             )
         }
@@ -34,7 +34,7 @@ pipeline {
                 body: """<p>Build failed for job: ${env.JOB_NAME}</p>
                          <p>Build Number: ${env.BUILD_NUMBER}</p>
                          <p>View logs: <a href='${env.BUILD_URL}'>${env.BUILD_URL}</a></p>""",
-                to: 'umamahesh571@gmail.com',
+                to: '213narasimha@gmail.com',
                 mimeType: 'text/html'
             )
         }
