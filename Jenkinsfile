@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'nodes'
-    }
+    agent any
     tools {
        maven 'maven.15' 
     }
